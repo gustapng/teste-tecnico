@@ -47,8 +47,7 @@ Siga os passos abaixo para preparar o ambiente localmente:
    ```
 
 5. Ajuste as permissões das pastas (Necessário para o SQLite de cache/sessão):
-   ```
-   Bash
+   ```Bash
    docker-compose exec app chmod -R 777 storage bootstrap/cache database
    ```
 
