@@ -42,6 +42,8 @@ Siga os passos abaixo para preparar o ambiente localmente:
    ```Bash
    docker-compose exec app cp .env.example .env
    docker-compose exec app php artisan key:generate
+   docker-compose exec app touch database/database.sqlite
+   docker-compose exec app php artisan migrate
    ```
 
 5. Ajuste as permissões das pastas (Necessário para o SQLite de cache/sessão):
